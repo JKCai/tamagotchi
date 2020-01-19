@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.imgStyle {
+	width: '60px';
+};
+
+.introPara {
+    padding: '25px';
+    lineHeight: '30px';
+}
