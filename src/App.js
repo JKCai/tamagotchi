@@ -1,5 +1,6 @@
 import React from 'react';
 import Introduction from './components/Introduction';
+import TamagotchiForm from './components/TamagotchiForm';
 import './App.css';
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
    
 		<div>
 			<Introduction/>
-  
+      <TamagotchiForm/>
 		</div>
 	);
 		
