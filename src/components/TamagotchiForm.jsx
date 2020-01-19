@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import TamagotchiModel from '../models/TamagotchiModel.js';
 
 const tamaForm = {padding: '25px', lineHeight: '30px', textAlign: 'center'}
 class TamagotchiForm extends React.Component {
@@ -11,8 +12,11 @@ class TamagotchiForm extends React.Component {
 
 	handleCreateTamagotchi(event) {
 		event.preventDefault();
-		console.log(this.refs);
 		const { _name } = this.refs;
+		var newTamagotchi = new TamagotchiModel(_name.value);
+		this.props.addNewCreatureToTamagotchi(newTamagotchi);
+		this.props.hideFormAfterSubmission();
+		console.log(newTamagotchi.name);
 		
 	}
 
@@ -32,5 +36,12 @@ class TamagotchiForm extends React.Component {
 		);
 	}
 }
+
+// define the proptype as function 
+TamagotchiForm.propTypes = {
+	addNewCreatureToTamagotchi: PropTypes.func,
+	hideFormAfterSubmission: PropTypes.func,
+
+};
 
 export default TamagotchiForm;
