@@ -9,7 +9,6 @@ import koala from '../assets/img/007-koala.svg';
 import kangaroo from '../assets/img/008-kangaroo.svg';
 
 const imgStyle = {width: '60px'};
-
 const introPara = {padding: '25px',lineHeight: '30px'}
 
 class Introduction extends React.Component {
