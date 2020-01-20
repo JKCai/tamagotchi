@@ -74,11 +74,15 @@ class TamagotchiActivities extends React.Component {
 		var hungryLevel = this.state.hungryLevel;
 		if(hungryLevel > 0){
 			hungryLevel = hungryLevel - 1;
+		}else{
+			hungryLevel = 0;
 		}
 
 		var currLive = this.state.life;
 		if(currLive + 5 <= 100){
 			currLive = this.state.life + 5;
+		}else{
+			currLive = 100;
 		}
 		
 		this.setState({life: currLive, hungryLevel: hungryLevel});
@@ -122,7 +126,6 @@ class TamagotchiActivities extends React.Component {
 					<button onClick={this.putToBed}>Put to Bed</button>
 					</div>
 				}
-				
 			</div>
 		);
 	}

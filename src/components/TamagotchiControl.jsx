@@ -23,7 +23,6 @@ class TamagotchiControl extends React.Component {
 	}
 
 	render(){
-		const formIsVisible = this.state.formIsVisible;
         let formContent = null;
 
         // if the current form is not visble and createTamagotchi button is clicked,
@@ -48,6 +47,11 @@ class TamagotchiControl extends React.Component {
 
 }
 
+// define the proptype as function 
+TamagotchiControl.propTypes = {
+	addNewCreatureToTamagotchi: PropTypes.func,
+
+};
 
 
 export default TamagotchiControl;

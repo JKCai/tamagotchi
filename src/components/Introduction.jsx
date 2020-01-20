@@ -19,14 +19,15 @@ class Introduction extends React.Component {
 				<h1>Tamagotchi App</h1>
                 <h3>Created by Jiankun</h3>
 				<p>A Tamagotchi was a virtual pet created in the 90's. They can be interacted and raised it through various activities including eating, playing, and making it sleep. Tamagotchis went through several life cycles (egg, teen, adult, elderly) and could die from lack of attention or old age.</p>
-				<img style={imgStyle} src={cat}/>
-				<img style={imgStyle} src={cow}/>
-				<img style={imgStyle} src={puppy}/>
-				<img style={imgStyle} src={giraffe}/>
-				<img style={imgStyle} src={monkey}/>
-				<img style={imgStyle} src={panda}/>
-				<img style={imgStyle} src={koala}/>
-				<img style={imgStyle} src={kangaroo}/>
+				<img style={imgStyle} src={cat} alt='cat'/>
+				<img style={imgStyle} src={cow} alt='cow'/>
+				<img style={imgStyle} src={puppy} alt='puppy'/>
+				<img style={imgStyle} src={giraffe} alt='giraffe'/>
+				<img style={imgStyle} src={monkey} alt='monkey'/>
+				<img style={imgStyle} src={panda} alt='panda'/>
+				<img style={imgStyle} src={koala} alt='koala'/>
+				<img style={imgStyle} src={kangaroo} alt='kangaroo'/>
+				
 			</div>
 		);
 	}
