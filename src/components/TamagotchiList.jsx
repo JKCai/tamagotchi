@@ -13,6 +13,7 @@ function TamagotchiList(props){
 				
 				// pass name, life and key to the component of TamagtochiDetail
 				<TamagotchiDetail
+					className = "tamagotchi"
 					name= {creature.name}
 					life={creature.life}
 					key={index}/>
